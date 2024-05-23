@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HdSSD2f6Vn1qsoG4bFtUXcu1eYm7syxAEPC+PqNBOIcHG9kzVhnzMIGyPR4D8UrCwr+Jk6xPPeACFpVLPhdUmg==",
+  "dgSpecHash": "e4bK0v+hv/eIL7zvIopBQlvqIscVURl4NqIneng1rktdXW/qLzepBnOOYhm1uuUua8Q1Ws2G9Y3QeGKR7nQwWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\ExamProgram.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\asus\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
