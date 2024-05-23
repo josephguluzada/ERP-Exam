@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj": {}
+    "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj": {
+    "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj",
         "projectName": "ExamProgram.Core",
-        "projectPath": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj",
+        "projectPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Core\\obj\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,16 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
@@ -70,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj": {
+    "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj",
         "projectName": "ExamProgram.Data",
-        "projectPath": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj",
+        "projectPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Data\\obj\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj": {
-                "projectPath": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj"
+              "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj"
               }
             }
           }
@@ -116,6 +126,10 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[8.0.5, )"
             }

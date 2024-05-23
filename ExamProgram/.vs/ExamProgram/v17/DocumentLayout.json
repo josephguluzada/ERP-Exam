@@ -1,18 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\ExamProgram\\",
+  "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|c:\\users\\asus\\desktop\\examprogram\\src\\examprogram.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|solutionrelative:src\\examprogram.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.data\\configurations\\classconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|solutionrelative:src\\examprogram.data\\configurations\\classconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02C2CAAD-AA24-4F15-B1FC-EDBDB648B6FD}|src\\ExamProgram.Core\\ExamProgram.Core.csproj|c:\\users\\asus\\desktop\\examprogram\\src\\examprogram.core\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02C2CAAD-AA24-4F15-B1FC-EDBDB648B6FD}|src\\ExamProgram.Core\\ExamProgram.Core.csproj|solutionrelative:src\\examprogram.core\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.data\\configurations\\examconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|solutionrelative:src\\examprogram.data\\configurations\\examconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|c:\\users\\asus\\desktop\\examprogram\\src\\examprogram.data\\dal\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|solutionrelative:src\\examprogram.data\\dal\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.data\\configurations\\lessonconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|solutionrelative:src\\examprogram.data\\configurations\\lessonconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.data\\configurations\\studentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|solutionrelative:src\\examprogram.data\\configurations\\studentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.data\\configurations\\teacherconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6AAAD79-8309-48AE-9DA1-87154F873749}|src\\ExamProgram.Data\\ExamProgram.Data.csproj|solutionrelative:src\\examprogram.data\\configurations\\teacherconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|solutionrelative:src\\examprogram.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|solutionrelative:src\\examprogram.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +47,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Data\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "src\\ExamProgram.Data\\Repositories\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Data\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "src\\ExamProgram.Data\\Repositories\\GenericRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAdAAAA",
+              "Title": "ClassConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\Configurations\\ClassConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Data\\Configurations\\ClassConfiguration.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\Configurations\\ClassConfiguration.cs",
+              "RelativeToolTip": "src\\ExamProgram.Data\\Configurations\\ClassConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:47:33.628Z",
+              "WhenOpened": "2024-05-23T17:01:12.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Core\\Repositories\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "src\\ExamProgram.Core\\Repositories\\IGenericRepository.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Core\\Repositories\\IGenericRepository.cs",
-              "RelativeToolTip": "src\\ExamProgram.Core\\Repositories\\IGenericRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAOAAAA",
+              "Title": "ExamConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\Configurations\\ExamConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Data\\Configurations\\ExamConfiguration.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\Configurations\\ExamConfiguration.cs",
+              "RelativeToolTip": "src\\ExamProgram.Data\\Configurations\\ExamConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:45:43.71Z",
+              "WhenOpened": "2024-05-23T17:01:09.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Data\\DAL\\DataContext.cs",
-              "RelativeDocumentMoniker": "src\\ExamProgram.Data\\DAL\\DataContext.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Data\\DAL\\DataContext.cs",
-              "RelativeToolTip": "src\\ExamProgram.Data\\DAL\\DataContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABOAAAA",
+              "Title": "LessonConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\Configurations\\LessonConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Data\\Configurations\\LessonConfiguration.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\Configurations\\LessonConfiguration.cs",
+              "RelativeToolTip": "src\\ExamProgram.Data\\Configurations\\LessonConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:41:08.547Z",
+              "WhenOpened": "2024-05-23T17:01:07.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\Configurations\\StudentConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Data\\Configurations\\StudentConfiguration.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\Configurations\\StudentConfiguration.cs",
+              "RelativeToolTip": "src\\ExamProgram.Data\\Configurations\\StudentConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T17:01:04.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TeacherConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\Configurations\\TeacherConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Data\\Configurations\\TeacherConfiguration.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\Configurations\\TeacherConfiguration.cs",
+              "RelativeToolTip": "src\\ExamProgram.Data\\Configurations\\TeacherConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T17:00:47.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\Program.cs",
+              "RelativeToolTip": "src\\ExamProgram.Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T16:57:33.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\appsettings.json",
+              "RelativeToolTip": "src\\ExamProgram.Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-23T16:56:10.024Z",
               "EditorCaption": ""
             }
           ]

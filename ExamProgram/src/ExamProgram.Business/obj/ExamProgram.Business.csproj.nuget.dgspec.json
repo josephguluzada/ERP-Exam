@@ -1,17 +1,81 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Business\\ExamProgram.Business.csproj": {}
+    "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgram.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Business\\ExamProgram.Business.csproj": {
+    "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgram.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Business\\ExamProgram.Business.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgram.Business.csproj",
         "projectName": "ExamProgram.Business",
-        "projectPath": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Business\\ExamProgram.Business.csproj",
+        "projectPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgram.Business.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\Desktop\\ExamProgram\\src\\ExamProgram.Business\\obj\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj",
+        "projectName": "ExamProgram.Core",
+        "projectPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +108,96 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj",
+        "projectName": "ExamProgram.Data",
+        "projectPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\ExamProgram.Data.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\ExamProgram.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

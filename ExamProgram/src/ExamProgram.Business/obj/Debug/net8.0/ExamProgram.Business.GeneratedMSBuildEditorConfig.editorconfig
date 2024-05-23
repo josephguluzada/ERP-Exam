@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ExamProgram.Business
-build_property.ProjectDir = C:\Users\asus\Desktop\ExamProgram\src\ExamProgram.Business\
+build_property.ProjectDir = C:\Users\asus\Desktop\Exam-Program-Application\ExamProgram\src\ExamProgram.Business\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
