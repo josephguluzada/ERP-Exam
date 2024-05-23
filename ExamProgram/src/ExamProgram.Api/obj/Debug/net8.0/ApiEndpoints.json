@@ -79,6 +79,85 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ExamProgram.Api.Controllers.LessonsController",
+    "Method": "Create",
+    "RelativePath": "api/Lessons",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ExamProgram.Business.DTOs.LessonDtos.LessonCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ExamProgram.Api.Controllers.LessonsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Lessons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ExamProgram.Api.Controllers.LessonsController",
+    "Method": "Get",
+    "RelativePath": "api/Lessons/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ExamProgram.Api.Controllers.LessonsController",
+    "Method": "Delete",
+    "RelativePath": "api/Lessons/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ExamProgram.Api.Controllers.LessonsController",
+    "Method": "Update",
+    "RelativePath": "api/Lessons/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "ExamProgram.Business.DTOs.LessonDtos.LessonUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ExamProgram.Api.Controllers.StudentsController",
     "Method": "Create",
     "RelativePath": "api/Students",
