@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace ExamProgram.Core.Entities;
+﻿namespace ExamProgram.Core.Entities;
 
 public class Exam : BaseEntity
 {

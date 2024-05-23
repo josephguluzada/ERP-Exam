@@ -41,7 +41,7 @@ namespace ExamProgram.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Class");
+                    b.ToTable("Class", (string)null);
                 });
 
             modelBuilder.Entity("ExamProgram.Core.Entities.Exam", b =>
@@ -76,7 +76,7 @@ namespace ExamProgram.Data.Migrations
 
                     b.HasIndex("StudentId");
 
-                    b.ToTable("Exam");
+                    b.ToTable("Exam", (string)null);
                 });
 
             modelBuilder.Entity("ExamProgram.Core.Entities.Lesson", b =>
@@ -113,7 +113,7 @@ namespace ExamProgram.Data.Migrations
 
                     b.HasIndex("TeacherId");
 
-                    b.ToTable("Lesson");
+                    b.ToTable("Lesson", (string)null);
                 });
 
             modelBuilder.Entity("ExamProgram.Core.Entities.Student", b =>
@@ -148,7 +148,7 @@ namespace ExamProgram.Data.Migrations
 
                     b.HasIndex("ClassId");
 
-                    b.ToTable("Student");
+                    b.ToTable("Student", (string)null);
                 });
 
             modelBuilder.Entity("ExamProgram.Core.Entities.Teacher", b =>
@@ -175,7 +175,7 @@ namespace ExamProgram.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Teacher");
+                    b.ToTable("Teacher", (string)null);
                 });
 
             modelBuilder.Entity("ExamProgram.Core.Entities.Exam", b =>

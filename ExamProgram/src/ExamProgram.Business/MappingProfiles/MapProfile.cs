@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ExamProgram.Business.DTOs.ClassDtos;
+using ExamProgram.Business.DTOs.ExamDtos;
 using ExamProgram.Business.DTOs.LessonDtos;
 using ExamProgram.Business.DTOs.StudentDtos;
 using ExamProgram.Business.DTOs.TeacherDtos;
@@ -26,5 +27,9 @@ public class MapProfile : Profile
         CreateMap<LessonCreateDto, Lesson>().ReverseMap();
         CreateMap<LessonUpdateDto, Lesson>().ReverseMap();
         CreateMap<LessonGetDto, Lesson>().ReverseMap();
+
+        CreateMap<ExamCreateDto, Exam>().ReverseMap();
+        CreateMap<ExamUpdateDto, Exam>().ReverseMap();
+        CreateMap<ExamGetDto, Exam>().ReverseMap();
     }
 }
