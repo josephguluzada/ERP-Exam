@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "bDa98+QeIqhdN+jcJa2lp9a+HHaIyXF6f4AvLXU3Q/Jbqq6qDbqzhFeKpb4DALBP8nCnSfAR6B0o72EwpLK+NQ==",
+  "dgSpecHash": "rKNCsmUOSn3xBPte2BjFNNAOfx+nZcnHhZeS7Aa8zlAbUp9LBgm+gJFL2KxyeQJc4mQuvg+dG3cqk1dl+SkUfQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgram.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",

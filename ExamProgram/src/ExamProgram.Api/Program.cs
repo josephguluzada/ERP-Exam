@@ -2,11 +2,18 @@ using ExamProgram.Data.DAL;
 using Microsoft.EntityFrameworkCore;
 using ExamProgram.Data;
 using ExamProgram.Business;
+using FluentValidation.AspNetCore;
+using ExamProgram.Business.DtoValidators.StudentDtoValidators;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddFluentValidation(opt =>
+{
+    opt.RegisterValidatorsFromAssembly(typeof(StudentCreateDtoValidator).Assembly);
+}).AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
 builder.Services.AddDbContext<DataContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("default"));
