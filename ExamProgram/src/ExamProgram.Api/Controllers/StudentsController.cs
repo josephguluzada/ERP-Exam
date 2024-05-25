@@ -1,5 +1,8 @@
-﻿using ExamProgram.Business.DTOs.ClassDtos;
+﻿using ExamProgram.Api.ResponseMessages;
+using ExamProgram.Business.DTOs.ClassDtos;
 using ExamProgram.Business.DTOs.StudentDtos;
+using ExamProgram.Business.ExamProgramApiExceptions.CommonExceptions;
+using ExamProgram.Business.ExamProgramApiExceptions.StudentExceptions;
 using ExamProgram.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +23,22 @@ namespace ExamProgram.Api.Controllers
         [HttpPost("")]
         public async Task<IActionResult> Create(StudentCreateDto dto)
         {
-            await _studentService.CreateAsync(dto);
+            try
+            {
+                await _studentService.CreateAsync(dto);
+            }
+            catch(SameNumberException ex)
+            {
+                return BadRequest(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (NotFoundException ex)
+            {
+                return BadRequest(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
             return Ok();
         }
@@ -44,6 +62,10 @@ namespace ExamProgram.Api.Controllers
             {
                 await _studentService.DeleteAsync(id);
             }
+            catch(NotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
             catch (Exception)
             {
                 return BadRequest();
@@ -55,7 +77,22 @@ namespace ExamProgram.Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, StudentUpdateDto dto)
         {
-            await _studentService.UpdateAsync(id, dto);
+            try
+            {
+                await _studentService.UpdateAsync(id,dto);
+            }
+            catch (SameNumberException ex)
+            {
+                return BadRequest(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (NotFoundException ex)
+            {
+                return BadRequest(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
             return Ok();
         }

@@ -3,80 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|solutionrelative:src\\examprogram.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\views\\student\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\views\\student\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\services\\implementations\\crudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\services\\implementations\\crudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\services\\implementations\\classservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\services\\implementations\\classservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.api\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|solutionrelative:src\\examprogram.api\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\views\\class\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\views\\class\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\views\\class\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\views\\class\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\examprogramapiexceptions\\classexceptions\\sameclassnoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\examprogramapiexceptions\\classexceptions\\sameclassnoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\examprogramapiexceptions\\ibaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\examprogramapiexceptions\\ibaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.api\\responsemessages\\apiresponsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|solutionrelative:src\\examprogram.api\\responsemessages\\apiresponsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\examprogramapiexceptions\\commonexceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\examprogramapiexceptions\\commonexceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\examprogramuiexceptions\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\examprogramuiexceptions\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\dtovalidators\\classdtovalidators\\classcreatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\dtovalidators\\classdtovalidators\\classcreatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\services\\implementations\\crudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\services\\implementations\\crudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.api\\responsemessages\\apiresponsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D3D92D-52F5-474E-B9EF-995E614E6075}|src\\ExamProgram.Api\\ExamProgram.Api.csproj|solutionrelative:src\\examprogram.api\\responsemessages\\apiresponsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\examprogramapiexceptions\\studentexceptions\\samenumberexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\examprogramapiexceptions\\studentexceptions\\samenumberexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\examprogramapiexceptions\\ibaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\examprogramapiexceptions\\ibaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\views\\teacher\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\views\\teacher\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\views\\teacher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\views\\teacher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\dtos\\studentdtos\\studentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\dtos\\studentdtos\\studentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\viewmodels\\classviewmodels\\classviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\viewmodels\\classviewmodels\\classviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\views\\class\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\views\\class\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\viewmodels\\studentviewmodels\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\viewmodels\\studentviewmodels\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\viewmodels\\classviewmodels\\classcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\viewmodels\\classviewmodels\\classcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\dtos\\studentdtos\\studentgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\dtos\\studentdtos\\studentgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\viewmodels\\studentviewmodels\\studentcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\viewmodels\\studentviewmodels\\studentcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02C2CAAD-AA24-4F15-B1FC-EDBDB648B6FD}|src\\ExamProgram.Core\\ExamProgram.Core.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.core\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C2CAAD-AA24-4F15-B1FC-EDBDB648B6FD}|src\\ExamProgram.Core\\ExamProgram.Core.csproj|solutionrelative:src\\examprogram.core\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.business\\dtos\\classdtos\\classgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50084CCC-8C38-4802-9F18-E60CDCE9430E}|src\\ExamProgram.Business\\ExamProgram.Business.csproj|solutionrelative:src\\examprogram.business\\dtos\\classdtos\\classgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\examprogram.ui\\views\\teacher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C95BD99F-8B9B-4A4C-9F14-104217202270}|ExamProgram.UI\\ExamProgram.UI.csproj|solutionrelative:examprogram.ui\\views\\teacher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02C2CAAD-AA24-4F15-B1FC-EDBDB648B6FD}|src\\ExamProgram.Core\\ExamProgram.Core.csproj|c:\\users\\asus\\desktop\\exam-program-application\\examprogram\\src\\examprogram.core\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C2CAAD-AA24-4F15-B1FC-EDBDB648B6FD}|src\\ExamProgram.Core\\ExamProgram.Core.csproj|solutionrelative:src\\examprogram.core\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,34 +98,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClassController.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Controllers\\ClassController.cs",
-              "RelativeDocumentMoniker": "ExamProgram.UI\\Controllers\\ClassController.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Controllers\\ClassController.cs*",
-              "RelativeToolTip": "ExamProgram.UI\\Controllers\\ClassController.cs*",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAmwFwAAAA3AAAA",
+              "DocumentIndex": 2,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "ExamProgram.UI\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "ExamProgram.UI\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAUwH8AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T16:51:44.186Z",
+              "WhenOpened": "2024-05-25T19:13:45.392Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClassController.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\Controllers\\ClassController.cs",
-              "RelativeDocumentMoniker": "src\\ExamProgram.Api\\Controllers\\ClassController.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\Controllers\\ClassController.cs",
-              "RelativeToolTip": "src\\ExamProgram.Api\\Controllers\\ClassController.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAMwD0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:07:20.373Z",
-              "IsPinned": true,
+              "DocumentIndex": 3,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Student\\Update.cshtml",
+              "RelativeDocumentMoniker": "ExamProgram.UI\\Views\\Student\\Update.cshtml",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Student\\Update.cshtml",
+              "RelativeToolTip": "ExamProgram.UI\\Views\\Student\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAACoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T21:48:55.801Z",
               "EditorCaption": ""
             },
             {
@@ -122,119 +133,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Class\\Update.cshtml",
-              "RelativeDocumentMoniker": "ExamProgram.UI\\Views\\Class\\Update.cshtml",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Class\\Update.cshtml",
-              "RelativeToolTip": "ExamProgram.UI\\Views\\Class\\Update.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T18:44:53.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IBaseException.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgramApiExceptions\\IBaseException.cs",
-              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\ExamProgramApiExceptions\\IBaseException.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgramApiExceptions\\IBaseException.cs",
-              "RelativeToolTip": "src\\ExamProgram.Business\\ExamProgramApiExceptions\\IBaseException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "DocumentIndex": 6,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgramApiExceptions\\CommonExceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\ExamProgramApiExceptions\\CommonExceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgramApiExceptions\\CommonExceptions\\NotFoundException.cs",
+              "RelativeToolTip": "src\\ExamProgram.Business\\ExamProgramApiExceptions\\CommonExceptions\\NotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:33:59.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ApiException.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ExamProgramUIExceptions\\ApiException.cs",
-              "RelativeDocumentMoniker": "ExamProgram.UI\\ExamProgramUIExceptions\\ApiException.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ExamProgramUIExceptions\\ApiException.cs",
-              "RelativeToolTip": "ExamProgram.UI\\ExamProgramUIExceptions\\ApiException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:18:16.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApiResponseMessage.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\ResponseMessages\\ApiResponseMessage.cs",
-              "RelativeDocumentMoniker": "src\\ExamProgram.Api\\ResponseMessages\\ApiResponseMessage.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\ResponseMessages\\ApiResponseMessage.cs",
-              "RelativeToolTip": "src\\ExamProgram.Api\\ResponseMessages\\ApiResponseMessage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:17:47.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CrudService.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Services\\Implementations\\CrudService.cs",
-              "RelativeDocumentMoniker": "ExamProgram.UI\\Services\\Implementations\\CrudService.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Services\\Implementations\\CrudService.cs",
-              "RelativeToolTip": "ExamProgram.UI\\Services\\Implementations\\CrudService.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAYwEMAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:13:29.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SameClassNoException.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgramApiExceptions\\ClassExceptions\\SameClassNoException.cs",
-              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\ExamProgramApiExceptions\\ClassExceptions\\SameClassNoException.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgramApiExceptions\\ClassExceptions\\SameClassNoException.cs",
-              "RelativeToolTip": "src\\ExamProgram.Business\\ExamProgramApiExceptions\\ClassExceptions\\SameClassNoException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:12:16.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClassService.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\Services\\Implementations\\ClassService.cs",
-              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\Services\\Implementations\\ClassService.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\Services\\Implementations\\ClassService.cs",
-              "RelativeToolTip": "src\\ExamProgram.Business\\Services\\Implementations\\ClassService.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAcwEAAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:06:09.175Z",
+              "WhenOpened": "2024-05-25T19:45:43.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ClassCreateDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\DtoValidators\\ClassDtoValidators\\ClassCreateDtoValidator.cs",
-              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\DtoValidators\\ClassDtoValidators\\ClassCreateDtoValidator.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\DtoValidators\\ClassDtoValidators\\ClassCreateDtoValidator.cs",
-              "RelativeToolTip": "src\\ExamProgram.Business\\DtoValidators\\ClassDtoValidators\\ClassCreateDtoValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA1AAAA",
+              "Title": "IBaseException.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgramApiExceptions\\IBaseException.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\ExamProgramApiExceptions\\IBaseException.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgramApiExceptions\\IBaseException.cs",
+              "RelativeToolTip": "src\\ExamProgram.Business\\ExamProgramApiExceptions\\IBaseException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:05:14.314Z",
+              "WhenOpened": "2024-05-25T19:41:12.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Class\\Create.cshtml",
-              "RelativeDocumentMoniker": "ExamProgram.UI\\Views\\Class\\Create.cshtml",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Class\\Create.cshtml",
-              "RelativeToolTip": "ExamProgram.UI\\Views\\Class\\Create.cshtml",
+              "DocumentIndex": 10,
+              "Title": "SameNumberException.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgramApiExceptions\\StudentExceptions\\SameNumberException.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\ExamProgramApiExceptions\\StudentExceptions\\SameNumberException.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\ExamProgramApiExceptions\\StudentExceptions\\SameNumberException.cs",
+              "RelativeToolTip": "src\\ExamProgram.Business\\ExamProgramApiExceptions\\StudentExceptions\\SameNumberException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:39:57.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudentCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\DTOs\\StudentDtos\\StudentCreateDto.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\DTOs\\StudentDtos\\StudentCreateDto.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\DTOs\\StudentDtos\\StudentCreateDto.cs",
+              "RelativeToolTip": "src\\ExamProgram.Business\\DTOs\\StudentDtos\\StudentCreateDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T16:59:17.604Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:34:16.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CrudService.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Services\\Implementations\\CrudService.cs",
+              "RelativeDocumentMoniker": "ExamProgram.UI\\Services\\Implementations\\CrudService.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Services\\Implementations\\CrudService.cs",
+              "RelativeToolTip": "ExamProgram.UI\\Services\\Implementations\\CrudService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAhwBkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:33:13.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApiException.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ExamProgramUIExceptions\\ApiException.cs",
+              "RelativeDocumentMoniker": "ExamProgram.UI\\ExamProgramUIExceptions\\ApiException.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ExamProgramUIExceptions\\ApiException.cs",
+              "RelativeToolTip": "ExamProgram.UI\\ExamProgramUIExceptions\\ApiException.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAIAwwA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:33:13.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Api\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "src\\ExamProgram.Api\\Controllers\\StudentsController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAkwEIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:32:52.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\Services\\Implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\Services\\Implementations\\StudentService.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\Services\\Implementations\\StudentService.cs",
+              "RelativeToolTip": "src\\ExamProgram.Business\\Services\\Implementations\\StudentService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowC4AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:32:35.785Z",
               "EditorCaption": ""
             },
             {
@@ -245,100 +243,152 @@
               "RelativeDocumentMoniker": "ExamProgram.UI\\Views\\Teacher\\Create.cshtml",
               "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Teacher\\Create.cshtml",
               "RelativeToolTip": "ExamProgram.UI\\Views\\Teacher\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T16:58:46.338Z",
+              "WhenOpened": "2024-05-25T19:22:48.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ClassCreateViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ViewModels\\ClassViewModels\\ClassCreateViewModel.cs",
-              "RelativeDocumentMoniker": "ExamProgram.UI\\ViewModels\\ClassViewModels\\ClassCreateViewModel.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ViewModels\\ClassViewModels\\ClassCreateViewModel.cs",
-              "RelativeToolTip": "ExamProgram.UI\\ViewModels\\ClassViewModels\\ClassCreateViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T16:57:46.795Z",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "ExamProgram.UI\\Views\\Student\\Create.cshtml",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Student\\Create.cshtml",
+              "RelativeToolTip": "ExamProgram.UI\\Views\\Student\\Create.cshtml",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAIwBIAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T19:22:41.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "StudentCreateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ViewModels\\StudentViewModels\\StudentCreateViewModel.cs",
+              "RelativeDocumentMoniker": "ExamProgram.UI\\ViewModels\\StudentViewModels\\StudentCreateViewModel.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ViewModels\\StudentViewModels\\StudentCreateViewModel.cs",
+              "RelativeToolTip": "ExamProgram.UI\\ViewModels\\StudentViewModels\\StudentCreateViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:19:59.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "ExamProgram.UI\\Views\\_ViewImports.cshtml",
               "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "ExamProgram.UI\\Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T16:56:00.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Teacher\\Index.cshtml",
-              "RelativeDocumentMoniker": "ExamProgram.UI\\Views\\Teacher\\Index.cshtml",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Teacher\\Index.cshtml",
-              "RelativeToolTip": "ExamProgram.UI\\Views\\Teacher\\Index.cshtml",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAmwA4AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T16:55:26.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Class\\Index.cshtml",
-              "RelativeDocumentMoniker": "ExamProgram.UI\\Views\\Class\\Index.cshtml",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Class\\Index.cshtml",
-              "RelativeToolTip": "ExamProgram.UI\\Views\\Class\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T16:54:48.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TeacherController.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Controllers\\TeacherController.cs",
-              "RelativeDocumentMoniker": "ExamProgram.UI\\Controllers\\TeacherController.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Controllers\\TeacherController.cs",
-              "RelativeToolTip": "ExamProgram.UI\\Controllers\\TeacherController.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAmwFsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T16:53:50.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ClassGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\DTOs\\ClassDtos\\ClassGetDto.cs",
-              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\DTOs\\ClassDtos\\ClassGetDto.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\DTOs\\ClassDtos\\ClassGetDto.cs",
-              "RelativeToolTip": "src\\ExamProgram.Business\\DTOs\\ClassDtos\\ClassGetDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T16:53:12.705Z",
+              "WhenOpened": "2024-05-25T19:17:52.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "CLassViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ViewModels\\ClassViewModels\\CLassViewModel.cs",
-              "RelativeDocumentMoniker": "ExamProgram.UI\\ViewModels\\ClassViewModels\\CLassViewModel.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ViewModels\\ClassViewModels\\CLassViewModel.cs",
-              "RelativeToolTip": "ExamProgram.UI\\ViewModels\\ClassViewModels\\CLassViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "ExamProgram.UI\\Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "ExamProgram.UI\\Views\\Student\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T19:17:29.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Teacher\\Index.cshtml",
+              "RelativeDocumentMoniker": "ExamProgram.UI\\Views\\Teacher\\Index.cshtml",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Views\\Teacher\\Index.cshtml",
+              "RelativeToolTip": "ExamProgram.UI\\Views\\Teacher\\Index.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAmwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T19:16:59.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TeacherController.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Controllers\\TeacherController.cs",
+              "RelativeDocumentMoniker": "ExamProgram.UI\\Controllers\\TeacherController.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\Controllers\\TeacherController.cs",
+              "RelativeToolTip": "ExamProgram.UI\\Controllers\\TeacherController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAA0wDMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T16:52:57.48Z",
+              "WhenOpened": "2024-05-25T19:16:55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StudentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ViewModels\\StudentViewModels\\StudentViewModel.cs",
+              "RelativeDocumentMoniker": "ExamProgram.UI\\ViewModels\\StudentViewModels\\StudentViewModel.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ViewModels\\StudentViewModels\\StudentViewModel.cs",
+              "RelativeToolTip": "ExamProgram.UI\\ViewModels\\StudentViewModels\\StudentViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:15:19.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StudentGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\DTOs\\StudentDtos\\StudentGetDto.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Business\\DTOs\\StudentDtos\\StudentGetDto.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Business\\DTOs\\StudentDtos\\StudentGetDto.cs",
+              "RelativeToolTip": "src\\ExamProgram.Business\\DTOs\\StudentDtos\\StudentGetDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:14:45.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Lesson.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\Entities\\Lesson.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Core\\Entities\\Lesson.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\Entities\\Lesson.cs",
+              "RelativeToolTip": "src\\ExamProgram.Core\\Entities\\Lesson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:14:16.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Core\\Entities\\Student.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Core\\Entities\\Student.cs",
+              "RelativeToolTip": "src\\ExamProgram.Core\\Entities\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:14:02.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApiResponseMessage.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\ResponseMessages\\ApiResponseMessage.cs",
+              "RelativeDocumentMoniker": "src\\ExamProgram.Api\\ResponseMessages\\ApiResponseMessage.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.Api\\ResponseMessages\\ApiResponseMessage.cs",
+              "RelativeToolTip": "src\\ExamProgram.Api\\ResponseMessages\\ApiResponseMessage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T18:55:27.771Z",
               "EditorCaption": ""
             }
           ]

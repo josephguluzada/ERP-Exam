@@ -1,5 +1,4 @@
 ﻿using ExamProgram.Business.ExamProgramApiExceptions;
-using ExamProgram.Business.ExamProgramApiExceptions.ClassExceptions;
 
 namespace ExamProgram.Api.ResponseMessages
 {

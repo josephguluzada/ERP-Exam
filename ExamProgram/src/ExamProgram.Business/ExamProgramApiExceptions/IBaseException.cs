@@ -2,6 +2,6 @@
 
 public interface IBaseException
 {
-    public string PropetyName { get; set; }
-    public string Message { get; set; }
+    string PropetyName { get; set; }
+    string Message { get; set; }
 }
