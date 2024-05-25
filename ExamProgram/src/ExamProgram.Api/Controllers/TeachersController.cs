@@ -19,7 +19,15 @@ namespace ExamProgram.Api.Controllers
         [HttpPost("")]
         public async Task<IActionResult> Create(TeacherCreateDto dto)
         {
-            await _teacherService.CreateAsync(dto);
+            try
+            {
+                await _teacherService.CreateAsync(dto);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
 
             return Ok();
         }

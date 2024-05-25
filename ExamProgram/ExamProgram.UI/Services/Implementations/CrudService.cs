@@ -1,5 +1,8 @@
-﻿using ExamProgram.UI.Services.Interfaces;
+﻿using ExamProgram.UI.ExamProgramUIExceptions;
+using ExamProgram.UI.Services.Interfaces;
 using RestSharp;
+using static ExamProgram.UI.ExamProgramUIExceptions.ApiException;
+using System.Net;
 
 namespace ExamProgram.UI.Services.Implementations;
 
@@ -16,22 +19,22 @@ public class CrudService : ICrudService
     {
         var request = new RestRequest(endpoint, Method.Post);
         request.AddJsonBody(model);
-        var response = await _client.PostAsync(request);
+        RestResponse response = await _client.ExecuteAsync(request);
 
         if (!response.IsSuccessful)
         {
-            throw new HttpRequestException(response.ErrorMessage);
+            throw new ApiException(response.StatusCode, response.Content);
         }
     }
 
     public async Task DeleteAsync(string endpoint, int id)
     {
         var request = new RestRequest(endpoint, Method.Delete);
-        var response = await _client.DeleteAsync(request);
+        var response = await _client.ExecuteAsync(request);
 
         if (!response.IsSuccessful)
         {
-            throw new HttpRequestException(response.ErrorMessage);
+            throw new ApiException(response.StatusCode,response.Content);
         }
     }
 
@@ -65,10 +68,10 @@ public class CrudService : ICrudService
     {
         var request = new RestRequest(endpoint, Method.Put);
         request.AddJsonBody(model);
-        var response = await _client.PutAsync(request);
+        var response = await _client.ExecuteAsync(request);
         if (!response.IsSuccessful)
         {
-            throw new HttpRequestException(response.ErrorMessage);
+            throw new ApiException(response.StatusCode,response.Content);
         }
     }
 }
