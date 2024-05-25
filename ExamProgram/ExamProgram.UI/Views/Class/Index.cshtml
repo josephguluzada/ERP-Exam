@@ -1,0 +1,44 @@
+﻿@model List<CLassViewModel>
+@{
+    ViewData["Title"] = "Siniflər səhifəsi";
+    int counter = 0;
+}
+
+
+<div class="d-flex justify-content-between align-items-center">
+    <h1>@ViewData["Title"]</h1>
+    <a asp-action="create" class="btn btn-primary">Create</a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Id</th>
+            <th scope="col">Nömrə</th>
+            <th scope="col">Əməliyyatlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cls in Model)
+        {
+            counter++;
+            <tr>
+                <th scope="row">@counter</th>
+                <td>@cls.Id</td>
+                <td>@cls.Number</td>
+                <td>
+                    <a asp-action="update" asp-route-id="@cls.Id" class="btn btn-warning">Düzənlə</a>
+                    <a asp-action="delete" asp-route-id="@cls.Id" class="btn btn-danger delete-btn">Sil</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+
+
+
+
+
+

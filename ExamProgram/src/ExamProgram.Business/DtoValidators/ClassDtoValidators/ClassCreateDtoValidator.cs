@@ -9,7 +9,6 @@ public class ClassCreateDtoValidator : AbstractValidator<ClassCreateDto>
     {
         RuleFor(x => x.Number)
             .NotNull().WithMessage("Null ola bilmez")
-            .NotEmpty().WithMessage("Bos ola bilmez")
             .GreaterThan(0).WithMessage("Nomre 0'dan böyük olmalıdır");
     }
 }

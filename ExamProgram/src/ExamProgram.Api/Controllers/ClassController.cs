@@ -1,4 +1,6 @@
-﻿using ExamProgram.Business.DTOs.ClassDtos;
+﻿using ExamProgram.Api.ResponseMessages;
+using ExamProgram.Business.DTOs.ClassDtos;
+using ExamProgram.Business.ExamProgramApiExceptions.ClassExceptions;
 using ExamProgram.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +20,18 @@ namespace ExamProgram.Api.Controllers
         [HttpPost("")]
         public async Task<IActionResult> Create(ClassCreateDto dto)
         {
-            await _classService.CreateAsync(dto);
+            try
+            {
+                await _classService.CreateAsync(dto);
+            }
+            catch(SameClassNoException ex)
+            {
+                return BadRequest(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
             return Ok();
         }
@@ -53,7 +66,19 @@ namespace ExamProgram.Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, ClassUpdateDto dto)
         {
-            await _classService.UpdateAsync(id, dto);
+            try
+            {
+                await _classService.UpdateAsync(id, dto);
+            }
+            catch(SameClassNoException ex)
+            {
+                return BadRequest(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+                
+            }
 
             return Ok();
         }

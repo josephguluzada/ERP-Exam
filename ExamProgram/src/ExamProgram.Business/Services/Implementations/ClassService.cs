@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ExamProgram.Business.DTOs.ClassDtos;
 using ExamProgram.Business.DTOs.TeacherDtos;
+using ExamProgram.Business.ExamProgramApiExceptions.ClassExceptions;
 using ExamProgram.Business.Services.Interfaces;
 using ExamProgram.Core.Entities;
 using ExamProgram.Core.Repositories;
@@ -24,6 +25,9 @@ public class ClassService : IClassService
 
     public async Task CreateAsync(ClassCreateDto dto)
     {
+        if (_classRepository.Table.Any(x => x.Number == dto.Number))
+            throw new SameClassNoException("Number","Cannot be same!");
+
         var data = _mapper.Map<Class>(dto);
         data.CreatedDate = DateTime.UtcNow;
 
@@ -57,6 +61,8 @@ public class ClassService : IClassService
 
     public async Task UpdateAsync(int id, ClassUpdateDto dto)
     {
+        if (_classRepository.Table.Any(x => x.Number == dto.Number))
+            throw new SameClassNoException("Number", "Cannot be same!");
         var data = await _classRepository.GetSingleAsync(x => x.Id == id);
 
         if (data is null) throw new NullReferenceException();
