@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "ExamProgram.Api.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLoginDto",
+        "Type": "ExamProgram.Business.DTOs.UserDtos.UserLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ExamProgram.Api.Controllers.ClassController",
     "Method": "Create",
     "RelativePath": "api/Class/Create",

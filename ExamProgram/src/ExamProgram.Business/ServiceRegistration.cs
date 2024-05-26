@@ -9,6 +9,7 @@ public static class ServiceRegistration
 {
     public static void AddServices(this IServiceCollection services)
     {
+        services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IExamService, ExamService>();
         services.AddScoped<IClassService, ClassService>();
         services.AddScoped<ILessonService, LessonService>();
