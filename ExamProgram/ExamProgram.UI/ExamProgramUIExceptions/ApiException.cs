@@ -27,6 +27,15 @@ namespace ExamProgram.UI.ExamProgramUIExceptions
                             ModelErrors.Add(key, errorResponse.Errors[key][0]);
                         }
                     break;
+                case HttpStatusCode.NotFound:
+                    ModelErrors = new();
+                    errorResponse = JsonConvert.DeserializeObject<ModelErrorResponse>(message);
+
+                    foreach (var key in errorResponse.Errors.Keys)
+                    {
+                        ModelErrors.Add(key, errorResponse.Errors[key][0]);
+                    }
+                    break;
             }
         }
 
