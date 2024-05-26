@@ -3,6 +3,7 @@ using ExamProgram.UI.Services.Interfaces;
 using RestSharp;
 using static ExamProgram.UI.ExamProgramUIExceptions.ApiException;
 using System.Net;
+using Microsoft.AspNetCore.Http;
 
 namespace ExamProgram.UI.Services.Implementations;
 
@@ -10,9 +11,11 @@ public class CrudService : ICrudService
 {
     private readonly RestClient _client;
 
-    public CrudService()
+    public CrudService(IHttpContextAccessor _httpContextAccessor)
     {
         _client = new RestClient("https://localhost:7133/api");
+        var token = _httpContextAccessor.HttpContext.Request.Cookies["token"];
+        _client.AddDefaultHeader("Authorization", "Bearer " + token);
     }
 
     public async Task CreateAsync<T>(string endpoint, T model) where T : class

@@ -3,12 +3,14 @@ using ExamProgram.Business.DTOs.LessonDtos;
 using ExamProgram.Business.ExamProgramApiExceptions.CommonExceptions;
 using ExamProgram.Business.ExamProgramApiExceptions.LessonExceptions;
 using ExamProgram.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExamProgram.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Roles ="SuperAdmin")]
     public class LessonsController : ControllerBase
     {
         private readonly ILessonService _lessonService;

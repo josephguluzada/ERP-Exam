@@ -4,6 +4,7 @@ using ExamProgram.Business.DTOs.StudentDtos;
 using ExamProgram.Business.ExamProgramApiExceptions.CommonExceptions;
 using ExamProgram.Business.ExamProgramApiExceptions.StudentExceptions;
 using ExamProgram.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,7 @@ namespace ExamProgram.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Roles = "SuperAdmin")]
     public class StudentsController : ControllerBase
     {
         private readonly IStudentService _studentService;

@@ -6,6 +6,7 @@ using ExamProgram.Business.ExamProgramApiExceptions.ExamExceptions;
 using ExamProgram.Business.ExamProgramApiExceptions.LessonExceptions;
 using ExamProgram.Business.Services.Implementations;
 using ExamProgram.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,6 +14,7 @@ namespace ExamProgram.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Roles = "SuperAdmin")]
     public class ExamsController : ControllerBase
     {
         private readonly IExamService _examService;
@@ -39,7 +41,6 @@ namespace ExamProgram.Api.Controllers
 
             return Ok();
         }
-
         [HttpGet("")]
         public async Task<IActionResult> GetAll()
         {

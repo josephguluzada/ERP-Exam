@@ -1,5 +1,6 @@
 using ExamProgram.UI.Services.Implementations;
 using ExamProgram.UI.Services.Interfaces;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace ExamProgram.UI
 {
@@ -12,6 +13,8 @@ namespace ExamProgram.UI
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<ICrudService, CrudService>();
+            builder.Services.AddScoped<IApiService, ApiService>();
+            builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             var app = builder.Build();
 

@@ -2,12 +2,14 @@
 using ExamProgram.Business.DTOs.ClassDtos;
 using ExamProgram.Business.ExamProgramApiExceptions.ClassExceptions;
 using ExamProgram.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExamProgram.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Roles = "SuperAdmin")]
     public class ClassController : ControllerBase
     {
         private readonly IClassService _classService;

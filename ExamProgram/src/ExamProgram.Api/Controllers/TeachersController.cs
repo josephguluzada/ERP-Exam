@@ -1,5 +1,6 @@
 ﻿using ExamProgram.Business.DTOs.TeacherDtos;
 using ExamProgram.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace ExamProgram.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Roles = "SuperAdmin")]
     public class TeachersController : ControllerBase
     {
         private readonly ITeacherService _teacherService;

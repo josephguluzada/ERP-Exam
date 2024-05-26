@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\asus\Desktop\Exam-Program-Application\ExamProgram\ExamProgram.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Class/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

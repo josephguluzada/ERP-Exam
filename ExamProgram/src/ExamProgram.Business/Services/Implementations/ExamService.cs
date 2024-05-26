@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using ExamProgram.Business.DTOs.ExamDtos;
-using ExamProgram.Business.DTOs.LessonDtos;
 using ExamProgram.Business.ExamProgramApiExceptions.CommonExceptions;
 using ExamProgram.Business.ExamProgramApiExceptions.ExamExceptions;
 using ExamProgram.Business.Services.Interfaces;
@@ -31,9 +30,9 @@ public class ExamService : IExamService
     public async Task CreateAsync(ExamCreateDto dto)
     {
         if (!_lessonRepository.Table.Any(x => x.Code.ToLower() == dto.LessonCode.Trim().ToLower()))
-            throw new NotFoundException("LessonCode","Lesson Code not exist!");
+            throw new NotFoundException("LessonCode", "Dərsin kodu tapılmadı!");
         if (!_studentRepository.Table.Any(x => x.Number == dto.StudentNumber))
-            throw new NotFoundException("StudentNumber","Student number not exist!");
+            throw new NotFoundException("StudentNumber", "Tələbə nömrəsi tapılmadı!");
         var lesson = await _lessonRepository.GetSingleAsync(x=>x.Code.ToLower() == dto.LessonCode.Trim().ToLower());
         var student = await _studentRepository.GetSingleAsync(x => x.Number == dto.StudentNumber);
         var data = _mapper.Map<Exam>(dto);
@@ -73,9 +72,9 @@ public class ExamService : IExamService
     public async Task UpdateAsync(int id, ExamUpdateDto dto)
     {
         if (!_lessonRepository.Table.Any(x => x.Code.ToLower() == dto.LessonCode.Trim().ToLower()))
-            throw new NotFoundException("LessonCode", "Lesson Code not exist!");
+            throw new NotFoundException("LessonCode", "Dərsin kodu tapılmadı!");
         if (!_studentRepository.Table.Any(x => x.Number == dto.StudentNumber))
-            throw new NotFoundException("StudentNumber", "Student number not exist!");
+            throw new NotFoundException("StudentNumber", "Tələbə nömrəsi tapılmadı!");
         var lesson = await _lessonRepository.GetSingleAsync(x => x.Code.ToLower() == dto.LessonCode.Trim().ToLower());
         var student = await _studentRepository.GetSingleAsync(x => x.Number == dto.StudentNumber);
         var data = await _examRepository.GetSingleAsync(x => x.Id == id, "Lesson", "Student");

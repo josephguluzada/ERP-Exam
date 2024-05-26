@@ -19,14 +19,31 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var datas = await _crudService.GetAllAsync<IEnumerable<ExamViewModel>>("/exams/getall");
+            IEnumerable<ExamViewModel> datas = null;
+
+            try
+            {
+                datas = await _crudService.GetAllAsync<IEnumerable<ExamViewModel>>("/exams/getall");
+            }
+            catch (Exception)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
 
             return View(datas);
         }
 
         public async Task<IActionResult> Create()
         {
-            ViewBag.Lessons = await _crudService.GetAllAsync<List<LessonViewModel>>("/lessons/getall");
+            
+            try
+            {
+                ViewBag.Lessons = await _crudService.GetAllAsync<List<LessonViewModel>>("/lessons/getall");
+            }
+            catch (Exception)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
 
             return View();
         }
@@ -51,6 +68,10 @@ namespace ExamProgram.UI.Controllers
                     return View(model);
                 }
             }
+            catch(HttpRequestException ex)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
             catch (Exception ex)
             {
                 ModelState.AddModelError("", ex.Message);
@@ -62,10 +83,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Update(int id)
         {
-            ViewBag.Lessons = await _crudService.GetAllAsync<List<LessonViewModel>>("/lessons/getall");
             ExamCreateViewModel data = null;
             try
             {
+                ViewBag.Lessons = await _crudService.GetAllAsync<List<LessonViewModel>>("/lessons/getall");
                 data = await _crudService.GetByIdAsync<ExamCreateViewModel>($"/exams/get/{id}", id);
             }
             catch (ApiException ex)
@@ -76,6 +97,10 @@ namespace ExamProgram.UI.Controllers
                     ViewBag.ErrorMessage = ex.ModelErrors[""];
                     return View("Error");
                 }
+            }
+            catch (HttpRequestException ex)
+            {
+                return RedirectToAction("Login", "Auth");
             }
             catch (Exception ex)
             {
@@ -91,10 +116,10 @@ namespace ExamProgram.UI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(int id, ExamCreateViewModel model)
         {
-            ViewBag.Lessons = await _crudService.GetAllAsync<List<LessonViewModel>>("/lessons/getall");
 
             try
             {
+                ViewBag.Lessons = await _crudService.GetAllAsync<List<LessonViewModel>>("/lessons/getall");
                 await _crudService.UpdateAsync($"/exams/update/{id}", model);
             }
             catch (ApiException ex)
@@ -112,6 +137,10 @@ namespace ExamProgram.UI.Controllers
                     ViewBag.ErrorMessage = ex.ModelErrors[""];
                     return View("Error");
                 }
+            }
+            catch (HttpRequestException ex)
+            {
+                return RedirectToAction("Login", "Auth");
             }
             catch (Exception ex)
             {
@@ -137,6 +166,10 @@ namespace ExamProgram.UI.Controllers
                     
                     return View("Error");
                 }
+            }
+            catch (HttpRequestException ex)
+            {
+                return RedirectToAction("Login", "Auth");
             }
             catch (Exception ex)
             {

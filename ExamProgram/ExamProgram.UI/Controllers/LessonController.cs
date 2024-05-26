@@ -19,7 +19,20 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var datas = await _crudService.GetAllAsync<IEnumerable<LessonViewModel>>("/lessons/getall");
+            IEnumerable<LessonViewModel> datas = null;
+
+            try
+            {
+                datas = await _crudService.GetAllAsync<IEnumerable<LessonViewModel>>("/lessons/getall");
+            }
+            catch (HttpRequestException)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+            catch (Exception)
+            {
+                return View("Error");
+            }
 
             return View(datas);
         }
