@@ -67,7 +67,7 @@ namespace ExamProgram.UI.Controllers
             var data = await _crudService.GetByIdAsync<StudentCreateViewModel>($"/students/get/{id}", id);
             if(data is null)
             {
-                return NotFound();
+                return View("Error");
             }
             return View(data);
         }

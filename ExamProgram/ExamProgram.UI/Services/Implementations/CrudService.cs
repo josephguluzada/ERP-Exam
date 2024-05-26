@@ -58,7 +58,7 @@ public class CrudService : ICrudService
 
         if (!response.IsSuccessful)
         {
-            throw new HttpRequestException(response.ErrorMessage);
+            throw new ApiException(response.StatusCode,response.Content);
         }
 
         return response.Data;
