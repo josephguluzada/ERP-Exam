@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using ExamProgram.Business.DTOs.ExamDtos;
 using ExamProgram.Business.DTOs.LessonDtos;
+using ExamProgram.Business.ExamProgramApiExceptions.CommonExceptions;
+using ExamProgram.Business.ExamProgramApiExceptions.ExamExceptions;
 using ExamProgram.Business.Services.Interfaces;
 using ExamProgram.Core.Entities;
 using ExamProgram.Core.Repositories;
@@ -29,9 +31,9 @@ public class ExamService : IExamService
     public async Task CreateAsync(ExamCreateDto dto)
     {
         if (!_lessonRepository.Table.Any(x => x.Code.ToLower() == dto.LessonCode.Trim().ToLower()))
-            throw new NullReferenceException("Lesson Code not exist!");
+            throw new NotFoundException("LessonCode","Lesson Code not exist!");
         if (!_studentRepository.Table.Any(x => x.Number == dto.StudentNumber))
-            throw new NullReferenceException("Student number not exist!");
+            throw new NotFoundException("StudentNumber","Student number not exist!");
         var lesson = await _lessonRepository.GetSingleAsync(x=>x.Code.ToLower() == dto.LessonCode.Trim().ToLower());
         var student = await _studentRepository.GetSingleAsync(x => x.Number == dto.StudentNumber);
         var data = _mapper.Map<Exam>(dto);
@@ -47,7 +49,7 @@ public class ExamService : IExamService
     {
         var data = await _examRepository.GetSingleAsync(x => x.Id == id);
 
-        if (data is null) throw new NullReferenceException();
+        if (data is null) throw new ExamNotFoundException("","Imtahan tapılmadı");
 
         _examRepository.Delete(data);
         await _examRepository.CommitAsync();
@@ -63,7 +65,7 @@ public class ExamService : IExamService
     public async Task<ExamGetDto> GetByIdAsync(int id)
     {
         var data = await _examRepository.GetSingleAsync(x => x.Id == id, "Lesson", "Student");
-        if (data is null) throw new NullReferenceException();
+        if (data is null) throw new ExamNotFoundException("", "Imtahan tapılmadı");
 
         return _mapper.Map<ExamGetDto>(data);
     }
@@ -71,13 +73,13 @@ public class ExamService : IExamService
     public async Task UpdateAsync(int id, ExamUpdateDto dto)
     {
         if (!_lessonRepository.Table.Any(x => x.Code.ToLower() == dto.LessonCode.Trim().ToLower()))
-            throw new NullReferenceException("Lesson Code not exist!");
+            throw new NotFoundException("LessonCode", "Lesson Code not exist!");
         if (!_studentRepository.Table.Any(x => x.Number == dto.StudentNumber))
-            throw new NullReferenceException("Student number not exist!");
+            throw new NotFoundException("StudentNumber", "Student number not exist!");
         var lesson = await _lessonRepository.GetSingleAsync(x => x.Code.ToLower() == dto.LessonCode.Trim().ToLower());
         var student = await _studentRepository.GetSingleAsync(x => x.Number == dto.StudentNumber);
         var data = await _examRepository.GetSingleAsync(x => x.Id == id, "Lesson", "Student");
-        if (data is null) throw new NullReferenceException();
+        if (data is null) throw new ExamNotFoundException("", "Imtahan tapılmadı");
 
         _mapper.Map(dto, data);
         data.LessonId = lesson.Id;

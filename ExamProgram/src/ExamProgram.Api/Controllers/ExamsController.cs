@@ -1,5 +1,9 @@
-﻿using ExamProgram.Business.DTOs.ExamDtos;
+﻿using ExamProgram.Api.ResponseMessages;
+using ExamProgram.Business.DTOs.ExamDtos;
 using ExamProgram.Business.DTOs.LessonDtos;
+using ExamProgram.Business.ExamProgramApiExceptions.CommonExceptions;
+using ExamProgram.Business.ExamProgramApiExceptions.ExamExceptions;
+using ExamProgram.Business.ExamProgramApiExceptions.LessonExceptions;
 using ExamProgram.Business.Services.Implementations;
 using ExamProgram.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -20,7 +24,18 @@ namespace ExamProgram.Api.Controllers
         [HttpPost("")]
         public async Task<IActionResult> Create(ExamCreateDto dto)
         {
-            await _examService.CreateAsync(dto);
+            try
+            {
+                await _examService.CreateAsync(dto);
+            }
+            catch (NotFoundException ex)
+            {
+                return BadRequest(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
             return Ok();
         }
@@ -40,6 +55,10 @@ namespace ExamProgram.Api.Controllers
             {
                 exam = await _examService.GetByIdAsync(id);
             }
+            catch(ExamNotFoundException ex)
+            {
+                return NotFound(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
             catch (Exception)
             {
 
@@ -56,6 +75,10 @@ namespace ExamProgram.Api.Controllers
             {
                 await _examService.DeleteAsync(id);
             }
+            catch (ExamNotFoundException ex)
+            {
+                return NotFound(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
             catch (Exception)
             {
                 return BadRequest();
@@ -67,7 +90,22 @@ namespace ExamProgram.Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, ExamUpdateDto dto)
         {
-            await _examService.UpdateAsync(id, dto);
+            try
+            {
+                await _examService.UpdateAsync(id, dto);
+            }
+            catch (ExamNotFoundException ex)
+            {
+                return NotFound(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (NotFoundException ex)
+            {
+                return BadRequest(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
             return Ok();
         }
