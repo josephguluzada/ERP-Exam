@@ -14,28 +14,27 @@
         <tr>
             <th scope="col">No</th>
             <th scope="col">Id</th>
-            <th scope="col">Ad</th>
-            <th scope="col">Soyad</th>
-            <th scope="col">Nömrəsi</th>
+            <th scope="col">Kod</th>
+            <th scope="col">Adı</th>
+            <th scope="col">Müəllimin adı, soyadı</th>
             <th scope="col">Sinif No</th>
             <th scope="col">Əməliyyatlar</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var std in Model)
+        @foreach (var lesson in Model)
         {
             counter++;
             <tr>
                 <th scope="row">@counter</th>
-                <td>@std.Id</td>
-                <td>@std.Code</td>
-                <td>@std.Name</td>
-                <td>@std.TeacherName</td>
-                <td>@std.TeacherSurname</td>
-                <td>@std.ClassNumber</td>
+                <td>@lesson.Id</td>
+                <td>@lesson.Code</td>
+                <td>@lesson.Name</td>
+                <td>@(lesson.TeacherName + " " + @lesson.TeacherSurname)</td>
+                <td>@lesson.ClassNumber</td>
                 <td>
-                    <a asp-action="update" asp-route-id="@std.Id" class="btn btn-warning">Düzənlə</a>
-                    <a asp-action="delete" asp-route-id="@std.Id" class="btn btn-danger delete-btn">Sil</a>
+                    <a asp-action="update" asp-route-id="@lesson.Id" class="btn btn-warning">Düzənlə</a>
+                    <a asp-action="delete" asp-route-id="@lesson.Id" class="btn btn-danger delete-btn">Sil</a>
                 </td>
             </tr>
         }

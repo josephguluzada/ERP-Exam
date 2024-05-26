@@ -1,4 +1,7 @@
-﻿using ExamProgram.Business.DTOs.UserDtos;
+﻿using ExamProgram.Api.ResponseMessages;
+using ExamProgram.Business.DTOs.TokenDtos;
+using ExamProgram.Business.DTOs.UserDtos;
+using ExamProgram.Business.ExamProgramApiExceptions.UserExceptions;
 using ExamProgram.Business.Services.Interfaces;
 using ExamProgram.Core.Entities;
 using Microsoft.AspNetCore.Authorization;
@@ -28,7 +31,21 @@ public class AuthController : ControllerBase
     [HttpPost("")]
     public async Task<IActionResult> Login(UserLoginDto userLoginDto)
     {
-        return Ok(await _authService.Login(userLoginDto));
+        TokenResponseDto? responseDto = null;
+        try
+        {
+            responseDto = await _authService.Login(userLoginDto);
+        }
+        catch(InvalidCredsException ex)
+        {
+            return BadRequest(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+
+        return Ok(responseDto);
     }
 
     [HttpGet("")]

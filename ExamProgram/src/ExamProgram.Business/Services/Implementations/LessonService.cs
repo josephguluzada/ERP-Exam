@@ -63,7 +63,7 @@ public class LessonService : ILessonService
     public async Task<LessonGetDto> GetByIdAsync(int id)
     {
         var data = await _lessonRepository.GetSingleAsync(x => x.Id == id, "Class", "Teacher");
-        if (data is null) throw new NullReferenceException();
+        if (data is null) throw new LessonNotFoundException("","Dərs tapılmadı");
 
         return _mapper.Map<LessonGetDto>(data);
     }

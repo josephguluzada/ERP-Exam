@@ -1,9 +1,7 @@
 ﻿using ExamProgram.UI.ExamProgramUIExceptions;
 using ExamProgram.UI.Services.Interfaces;
-using ExamProgram.UI.ViewModels.ClassViewModels;
 using ExamProgram.UI.ViewModels.ExamViewModels;
 using ExamProgram.UI.ViewModels.LessonViewModels;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExamProgram.UI.Controllers

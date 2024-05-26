@@ -44,7 +44,7 @@ public class StudentService : IStudentService
     {
         var data = await _studentRepository.GetSingleAsync(x => x.Id == id);
 
-        if (data is null) throw new NotFoundException();
+        if (data is null) throw new StudentNotFoundException("","Tələbə tapılmadı");
 
         _studentRepository.Delete(data);
         await _studentRepository.CommitAsync();
@@ -60,7 +60,7 @@ public class StudentService : IStudentService
     public async Task<StudentGetDto> GetByIdAsync(int id)
     {
         var data = await _studentRepository.GetSingleAsync(x => x.Id == id, "Class");
-        if(data is null) throw new NullReferenceException();
+        if(data is null) throw new StudentNotFoundException("","Tələbə tapılmadı");
 
         return _mapper.Map<StudentGetDto>(data);
     }
@@ -72,7 +72,7 @@ public class StudentService : IStudentService
         if (!await _classRepository.Table.AnyAsync(x => x.Id == dto.ClassId))
             throw new NotFoundException("ClassId", "Belə bir sinif mövcud deyil");
         var data = await _studentRepository.GetSingleAsync(x => x.Id == id, "Class");
-        if (data is null) throw new NullReferenceException();
+        if (data is null) throw new StudentNotFoundException("", "Tələbə tapılmadı");
 
         _mapper.Map(dto, data);
         data.UpdatedDate = DateTime.UtcNow;

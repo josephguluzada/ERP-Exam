@@ -30,17 +30,26 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Student" asp-action="Index">Tələbələr</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Lesson" asp-action="Index">Dərslər</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Lesson" asp-action="Index">Dərslər</a></li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Teacher" asp-action="Index">Müəllimlər</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Class" asp-action="Index">Siniflər</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="auth" asp-action="logout">Çıxış</a>
-                        </li>
-                        </li>
+
                     </ul>
+                    @if (Context.Request.Cookies["token"] is not null)
+                    {
+                        <ul class="navbar-nav ">
+                            <li>
+                                <span class="nav-link text-dark" style="color: black; font-size:17px; font-weight:bold">@(Context.Request.Cookies["token"] is not null ? "SuperAdmin" : "")</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="auth" asp-action="logout">Çıxış</a>
+                            </li>
+                        </ul>
+                    }
                 </div>
             </div>
         </nav>

@@ -106,6 +106,8 @@ namespace ExamProgram.UI.Controllers
             {
                 if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
+                    ViewBag.StatusCode = ex.StatusCode;
+                    ViewBag.ErrorMessage = ex.ModelErrors[""];
                     return View("Error");
                 }
             }
@@ -169,14 +171,22 @@ namespace ExamProgram.UI.Controllers
             {
                 if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
+                    ViewBag.StatusCode = ex.StatusCode;
+                    ViewBag.ErrorMessage = ex.ModelErrors[""];
+
                     return View("Error");
                 }
+            }
+            catch (HttpRequestException ex)
+            {
+                return RedirectToAction("Login", "Auth");
             }
             catch (Exception ex)
             {
 
-                return View();
+                return View("Error");
             }
+
             return RedirectToAction(nameof(Index));
         }
     }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ExamProgram.Business.DTOs.TeacherDtos;
+using ExamProgram.Business.ExamProgramApiExceptions.TeacherExceptions;
 using ExamProgram.Business.Services.Interfaces;
 using ExamProgram.Core.Entities;
 using ExamProgram.Core.Repositories;
@@ -33,7 +34,7 @@ public class TeacherService : ITeacherService
     {
         var data = await _teacherRepository.GetSingleAsync(x => x.Id == id);
 
-        if (data is null) throw new NullReferenceException();
+        if (data is null) throw new TeacherNotFoundException("","Müəllim tapılmadı");
 
         _teacherRepository.Delete(data);
         await _teacherRepository.CommitAsync();
@@ -49,6 +50,7 @@ public class TeacherService : ITeacherService
     public async Task<TeacherGetDto> GetByIdAsync(int id)
     {
         var data = await _teacherRepository.GetSingleAsync(x=> x.Id == id,"Lessons");
+        if (data is null) throw new TeacherNotFoundException("", "Müəllim tapılmadı");
 
         return _mapper.Map<TeacherGetDto>(data);
     }
@@ -57,7 +59,7 @@ public class TeacherService : ITeacherService
     {
         var data = await _teacherRepository.GetSingleAsync(x => x.Id == id);
 
-        if (data is null) throw new NullReferenceException();
+        if (data is null) throw new TeacherNotFoundException("","Müəllim tapılmadı");
 
         _mapper.Map(dto, data);
         data.UpdatedDate = DateTime.UtcNow;

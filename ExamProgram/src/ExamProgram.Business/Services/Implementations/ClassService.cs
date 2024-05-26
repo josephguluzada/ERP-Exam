@@ -39,7 +39,7 @@ public class ClassService : IClassService
     {
         var data = await _classRepository.GetSingleAsync(x => x.Id == id);
 
-        if (data is null) throw new NullReferenceException();
+        if (data is null) throw new ClassNotFoundException("","Sinif tapılmadı");
 
         _classRepository.Delete(data);
         await _classRepository.CommitAsync();
@@ -56,6 +56,8 @@ public class ClassService : IClassService
     {
         var data = await _classRepository.GetSingleAsync(x => x.Id == id);
 
+        if (data is null) throw new ClassNotFoundException("","Sinif tapilmadi");
+
         return _mapper.Map<ClassGetDto>(data);
     }
 
@@ -65,7 +67,7 @@ public class ClassService : IClassService
             throw new SameClassNoException("Number", "Cannot be same!");
         var data = await _classRepository.GetSingleAsync(x => x.Id == id);
 
-        if (data is null) throw new NullReferenceException();
+        if (data is null) throw new ClassNotFoundException("", "Sinif tapilmadi");
 
         _mapper.Map(dto, data);
         data.UpdatedDate = DateTime.UtcNow;

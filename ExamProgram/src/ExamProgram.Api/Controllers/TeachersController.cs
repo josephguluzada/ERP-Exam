@@ -1,7 +1,11 @@
-﻿using ExamProgram.Business.DTOs.TeacherDtos;
+﻿using ExamProgram.Api.ResponseMessages;
+using ExamProgram.Business.DTOs.ExamDtos;
+using ExamProgram.Business.DTOs.TeacherDtos;
+using ExamProgram.Business.ExamProgramApiExceptions.ExamExceptions;
+using ExamProgram.Business.ExamProgramApiExceptions.TeacherExceptions;
+using ExamProgram.Business.Services.Implementations;
 using ExamProgram.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExamProgram.Api.Controllers
@@ -43,7 +47,22 @@ namespace ExamProgram.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            return Ok(await _teacherService.GetByIdAsync(id));
+            TeacherGetDto exam;
+
+            try
+            {
+                exam = await _teacherService.GetByIdAsync(id);
+            }
+            catch (TeacherNotFoundException ex)
+            {
+                return NotFound(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (Exception)
+            {
+
+                return BadRequest();
+            }
+            return Ok(exam);
         }
 
         [HttpDelete("{id}")]
@@ -52,6 +71,10 @@ namespace ExamProgram.Api.Controllers
             try
             {
                 await _teacherService.DeleteAsync(id);
+            }
+            catch (TeacherNotFoundException ex)
+            {
+                return NotFound(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
             }
             catch (Exception)
             {
@@ -64,7 +87,19 @@ namespace ExamProgram.Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, TeacherUpdateDto dto)
         {
-            await _teacherService.UpdateAsync(id,dto);
+            try
+            {
+                await _teacherService.UpdateAsync(id, dto);
+            }
+            catch (TeacherNotFoundException ex)
+            {
+                return NotFound(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (Exception)
+            {
+
+                throw;
+            };
 
             return Ok();
         }

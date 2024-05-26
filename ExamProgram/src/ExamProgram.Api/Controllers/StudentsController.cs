@@ -1,8 +1,11 @@
 ﻿using ExamProgram.Api.ResponseMessages;
 using ExamProgram.Business.DTOs.ClassDtos;
+using ExamProgram.Business.DTOs.LessonDtos;
 using ExamProgram.Business.DTOs.StudentDtos;
 using ExamProgram.Business.ExamProgramApiExceptions.CommonExceptions;
+using ExamProgram.Business.ExamProgramApiExceptions.LessonExceptions;
 using ExamProgram.Business.ExamProgramApiExceptions.StudentExceptions;
+using ExamProgram.Business.Services.Implementations;
 using ExamProgram.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -54,7 +57,22 @@ namespace ExamProgram.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            return Ok(await _studentService.GetByIdAsync(id));
+            StudentGetDto data;
+
+            try
+            {
+                data = await _studentService.GetByIdAsync(id);
+            }
+            catch (StudentNotFoundException ex)
+            {
+                return NotFound(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
+            catch (Exception)
+            {
+
+                return BadRequest();
+            }
+            return Ok(data);
         }
 
         [HttpDelete("{id}")]
@@ -64,9 +82,13 @@ namespace ExamProgram.Api.Controllers
             {
                 await _studentService.DeleteAsync(id);
             }
+            catch(StudentNotFoundException ex)
+            {
+                return NotFound(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
+            }
             catch(NotFoundException ex)
             {
-                return NotFound(ex.Message);
+                return BadRequest(new ApiResponseMessage { Errors = ApiResponseMessage.CreateResponseMessage(ex) });
             }
             catch (Exception)
             {

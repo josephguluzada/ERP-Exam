@@ -14,7 +14,4 @@ public class SameClassNoException : Exception, IBaseException
         PropetyName = propertyName;
         Message = message;
     }
-
-
-    
 }

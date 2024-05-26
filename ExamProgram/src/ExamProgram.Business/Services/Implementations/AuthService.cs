@@ -1,5 +1,6 @@
 ﻿using ExamProgram.Business.DTOs.TokenDtos;
 using ExamProgram.Business.DTOs.UserDtos;
+using ExamProgram.Business.ExamProgramApiExceptions.UserExceptions;
 using ExamProgram.Business.Services.Interfaces;
 using ExamProgram.Core.Entities;
 using Microsoft.AspNetCore.Authentication;
@@ -40,13 +41,13 @@ public class AuthService : IAuthService
 
         if (user is null)
         {
-            throw new Exception("Invalid Credentials");
+            throw new InvalidCredsException("","Invalid Credentials");
         }
 
         var result = await _signInManager.PasswordSignInAsync(user, userLoginDto.password, false, false);
         if (!result.Succeeded)
         {
-            throw new Exception("Invalid Credentials");
+            throw new InvalidCredsException("", "Invalid Credentials");
         }
 
         IList<string> userRoles = await _userManager.GetRolesAsync(user);

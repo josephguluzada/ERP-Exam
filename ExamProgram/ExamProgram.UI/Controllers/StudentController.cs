@@ -47,15 +47,15 @@ namespace ExamProgram.UI.Controllers
                 return RedirectToAction("login", "auth");
             }
             ViewBag.Classes = await _crudService.GetAllAsync<List<CLassViewModel>>("/class/getall");
-            if(!ModelState.IsValid) return View(model);
+            if (!ModelState.IsValid) return View(model);
 
             try
             {
                 await _crudService.CreateAsync("/students/create", model);
             }
-            catch(ApiException ex)
+            catch (ApiException ex)
             {
-                if(ex.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                if (ex.StatusCode == System.Net.HttpStatusCode.BadRequest)
                 {
                     foreach (var key in ex.ModelErrors.Keys)
                     {
@@ -80,11 +80,27 @@ namespace ExamProgram.UI.Controllers
                 return RedirectToAction("login", "auth");
             }
             ViewBag.Classes = await _crudService.GetAllAsync<List<CLassViewModel>>("/class/getall");
-            var data = await _crudService.GetByIdAsync<StudentCreateViewModel>($"/students/get/{id}", id);
-            if(data is null)
+            StudentCreateViewModel data = null;
+            try
             {
-                return View("Error");
+                data = await _crudService.GetByIdAsync<StudentCreateViewModel>($"/students/get/{id}", id);
             }
+            catch (ApiException ex)
+            {
+                if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    ViewBag.StatusCode = ex.StatusCode;
+                    ViewBag.ErrorMessage = ex.ModelErrors[""];
+                    return View("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return View();
+            }
+            if (data is null) return View("Error");
+
             return View(data);
         }
         [HttpPost]
@@ -139,8 +155,12 @@ namespace ExamProgram.UI.Controllers
                         ModelState.AddModelError(key, ex.ModelErrors[key]);
                     }
                     return View();
-                }else if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
+                }
+                else if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
+                    ViewBag.StatusCode = ex.StatusCode;
+                    ViewBag.ErrorMessage = ex.ModelErrors[""];
+
                     return View("Error");
                 }
             }

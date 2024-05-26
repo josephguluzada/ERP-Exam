@@ -71,7 +71,31 @@ namespace ExamProgram.UI.Controllers
             {
                 return RedirectToAction("login", "auth");
             }
-            var data = await _crudService.GetByIdAsync<ClassCreateViewModel>($"/class/get/{id}", id);
+            ClassCreateViewModel data = null;
+
+            try
+            {
+                data = await _crudService.GetByIdAsync<ClassCreateViewModel>($"/class/get/{id}", id);
+            }
+            catch (ApiException ex)
+            {
+                if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    ViewBag.StatusCode = ex.StatusCode;
+                    ViewBag.ErrorMessage = ex.ModelErrors[""];
+                    return View("Error");
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return View();
+            }
+            if (data is null) return View("Error");
 
             return View(data);
         }
@@ -96,6 +120,11 @@ namespace ExamProgram.UI.Controllers
                         ModelState.AddModelError(key, ex.ModelErrors[key]);
                     }
                     return View();
+                }else if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    ViewBag.StatusCode = ex.StatusCode;
+                    ViewBag.ErrorMessage = ex.ModelErrors[""];
+                    return View("Error");
                 }
             }
             catch (Exception ex)
@@ -117,12 +146,23 @@ namespace ExamProgram.UI.Controllers
             {
                 await _crudService.DeleteAsync($"/class/delete/{id}", id);
             }
-            catch (ApiException)
+            catch (ApiException ex)
             {
-                return View("Error");
+                if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    ViewBag.StatusCode = ex.StatusCode;
+                    ViewBag.ErrorMessage = ex.ModelErrors[""];
+
+                    return View("Error");
+                }
             }
-            catch (Exception)
+            catch (HttpRequestException ex)
             {
+                return RedirectToAction("Login", "Auth");
+            }
+            catch (Exception ex)
+            {
+
                 return View("Error");
             }
 
