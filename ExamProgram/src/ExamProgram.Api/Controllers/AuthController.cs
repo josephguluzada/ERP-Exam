@@ -1,6 +1,7 @@
 ﻿using ExamProgram.Business.DTOs.UserDtos;
 using ExamProgram.Business.Services.Interfaces;
 using ExamProgram.Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,6 +29,14 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> Login(UserLoginDto userLoginDto)
     {
         return Ok(await _authService.Login(userLoginDto));
+    }
+
+    [HttpGet("")]
+    [Authorize]
+    public async Task<IActionResult> Logout()
+    {
+        await _authService.Logout();
+        return Ok();
     }
 
     //[HttpGet("[action]")]

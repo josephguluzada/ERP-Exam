@@ -23,13 +23,13 @@ namespace ExamProgram.UI.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
                     var authToken = await _apiService.Login(model);
 
-                    Response.Cookies.Append("token",authToken.AccessToken, new Microsoft.AspNetCore.Http.CookieOptions
+                    Response.Cookies.Append("token", authToken.AccessToken, new Microsoft.AspNetCore.Http.CookieOptions
                     {
                         Expires = DateTime.Now.AddYears(1),
                         HttpOnly = true
@@ -52,7 +52,22 @@ namespace ExamProgram.UI.Controllers
                 }
             }
 
-            return RedirectToAction(nameof(Index),"Exam");
+            return RedirectToAction(nameof(Index), "Home");
+        }
+        [HttpGet]
+        public async Task<IActionResult> Logout()
+        {
+            try
+            {
+                await _apiService.Logout();
+            }
+
+            catch (Exception)
+            {
+                return RedirectToAction("login", "auth");
+            }
+
+            return RedirectToAction("Login", "Auth");
         }
     }
 }

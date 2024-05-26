@@ -2,6 +2,8 @@
 using ExamProgram.Business.DTOs.UserDtos;
 using ExamProgram.Business.Services.Interfaces;
 using ExamProgram.Core.Entities;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -17,16 +19,20 @@ public class AuthService : IAuthService
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly SignInManager<AppUser> _signInManager;
     private readonly IConfiguration _configuration;
+    private readonly IHttpContextAccessor _httpContextAccessor;
+
     public AuthService(
            UserManager<AppUser> userManager,
            RoleManager<IdentityRole> roleManager,
            SignInManager<AppUser> signInManager,
-           IConfiguration configuration)
+           IConfiguration configuration,
+           IHttpContextAccessor httpContextAccessor)
     {
         _userManager = userManager;
         _roleManager = roleManager;
         _signInManager = signInManager;
         _configuration = configuration;
+        _httpContextAccessor = httpContextAccessor;
     }
     public async Task<TokenResponseDto> Login(UserLoginDto userLoginDto)
     {
@@ -73,6 +79,9 @@ public class AuthService : IAuthService
         return new TokenResponseDto(user.UserName, token, tokenExpireDate);
     }
 
-
-
+    public async Task Logout()
+    {
+        await _httpContextAccessor.HttpContext.SignOutAsync();
+        _httpContextAccessor.HttpContext.Response.Headers.Remove("Authorization");
+    }
 }

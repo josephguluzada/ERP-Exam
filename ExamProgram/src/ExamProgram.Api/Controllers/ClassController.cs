@@ -9,7 +9,6 @@ namespace ExamProgram.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    [Authorize(Roles = "SuperAdmin")]
     public class ClassController : ControllerBase
     {
         private readonly IClassService _classService;
@@ -18,7 +17,7 @@ namespace ExamProgram.Api.Controllers
         {
             _classService = classService;
         }
-
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost("")]
         public async Task<IActionResult> Create(ClassCreateDto dto)
         {
@@ -37,19 +36,19 @@ namespace ExamProgram.Api.Controllers
 
             return Ok();
         }
-
+        [Authorize(Roles = "SuperAdmin")]
         [HttpGet("")]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _classService.GetAllAsync());
         }
-
+        [Authorize(Roles = "SuperAdmin")]
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
             return Ok(await _classService.GetByIdAsync(id));
         }
-
+        [Authorize(Roles = "SuperAdmin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -64,7 +63,7 @@ namespace ExamProgram.Api.Controllers
 
             return Ok();
         }
-
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, ClassUpdateDto dto)
         {

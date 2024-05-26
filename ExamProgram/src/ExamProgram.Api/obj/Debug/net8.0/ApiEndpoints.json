@@ -16,6 +16,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ExamProgram.Api.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/Auth/Logout",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ExamProgram.Api.Controllers.ClassController",
     "Method": "Create",
     "RelativePath": "api/Class/Create",

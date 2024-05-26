@@ -2,7 +2,39 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center" style="margin-bottom:100px">
+    <h1 class="display-4">İdarə etmə paneli</h1>
+</div>
+<div class="row container-fluid">
+    <div class="col-md-4" style="margin-bottom:50px">
+        <div style="width:300px;height:150px; background-color: cornflowerblue; border-radius:30px;display:flex; justify-content:center; align-items:center">
+            <a style="text-decoration:none" asp-action="index" asp-controller="exam"><h1 style="color:white">Imtahanlar</h1></a>
+        </div>
+    </div>
+    <div class="col-md-4" style="margin-bottom:50px">
+        <div style="width:300px;height:150px; background-color: cornflowerblue; border-radius:30px;display:flex; justify-content:center; align-items:center">
+            <a style="text-decoration:none" asp-action="index" asp-controller="student"><h1 style="color:white">Tələbələr</h1></a>
+        </div>
+    </div>
+    <div class="col-md-4" style="margin-bottom:50px">
+        <div style="width:300px;height:150px; background-color: cornflowerblue; border-radius:30px;display:flex; justify-content:center; align-items:center">
+            <a style="text-decoration:none" asp-action="index" asp-controller="lesson"><h1 style="color:white">Dərslər</h1></a>
+        </div>
+    </div>
+    <div class="col-md-4" style="margin-bottom:50px">
+        <div style="width:300px;height:150px; background-color: cornflowerblue; border-radius:30px;display:flex; justify-content:center; align-items:center">
+           <a style="text-decoration:none" asp-action="index" asp-controller="class"> <h1 style="color:white">Siniflər</h1></a>
+        </div>
+    </div>
+    <div class="col-md-4" style="margin-bottom:50px">
+        <div style="width:300px;height:150px; background-color: cornflowerblue; border-radius:30px;display:flex; justify-content:center; align-items:center">
+            <a style="text-decoration:none" asp-action="index" asp-controller="teacher"><h1 style="color:white">Müəllimlər</h1></a>
+        </div>
+    </div>
+    <div class="col-md-4" style="margin-bottom:50px">
+        <div style="width:300px;height:150px; background-color: cornflowerblue; border-radius:30px;display:flex; justify-content:center; align-items:center">
+            <a style="text-decoration:none" asp-action="login" asp-controller="auth"><h1 style="color:white">Daxil ol</h1></a>
+        </div>
+    </div>
+
 </div>

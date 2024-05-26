@@ -19,6 +19,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Index()
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             IEnumerable<LessonViewModel> datas = null;
 
             try
@@ -39,6 +43,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Create()
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             var teachers = await _crudService.GetAllAsync<List<TeacherViewModel>>("/teachers/getall");
             ViewBag.Classes = await _crudService.GetAllAsync<List<CLassViewModel>>("/class/getall");
             ViewBag.Teachers = teachers.Select(t => new { t.Id, t.Fullname });
@@ -49,14 +57,18 @@ namespace ExamProgram.UI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(LessonCreateViewModel model)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             var teachers = await _crudService.GetAllAsync<List<TeacherViewModel>>("/teachers/getall");
             ViewBag.Classes = await _crudService.GetAllAsync<List<CLassViewModel>>("/class/getall");
             ViewBag.Teachers = teachers.Select(t => new { t.Id, t.Fullname });
             try
             {
-                await _crudService.CreateAsync("lessons/create",model);
+                await _crudService.CreateAsync("lessons/create", model);
             }
-            catch(ApiException ex)
+            catch (ApiException ex)
             {
                 if (ex.StatusCode == System.Net.HttpStatusCode.BadRequest)
                 {
@@ -78,6 +90,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Update(int id)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             var teachers = await _crudService.GetAllAsync<List<TeacherViewModel>>("/teachers/getall");
             ViewBag.Classes = await _crudService.GetAllAsync<List<CLassViewModel>>("/class/getall");
             ViewBag.Teachers = teachers.Select(t => new { t.Id, t.Fullname });
@@ -86,7 +102,7 @@ namespace ExamProgram.UI.Controllers
             {
                 data = await _crudService.GetByIdAsync<LessonCreateViewModel>($"/lessons/get/{id}", id);
             }
-            catch(ApiException ex)
+            catch (ApiException ex)
             {
                 if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
@@ -107,6 +123,10 @@ namespace ExamProgram.UI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(int id, LessonCreateViewModel model)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             var teachers = await _crudService.GetAllAsync<List<TeacherViewModel>>("/teachers/getall");
             ViewBag.Classes = await _crudService.GetAllAsync<List<CLassViewModel>>("/class/getall");
             ViewBag.Teachers = teachers.Select(t => new { t.Id, t.Fullname });
@@ -135,25 +155,29 @@ namespace ExamProgram.UI.Controllers
         }
 
 
-            public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (HttpContext.Request.Cookies["token"] is null)
             {
-                try
-                {
-                    await _crudService.DeleteAsync($"/lessons/delete/{id}", id);
-                }
-                catch (ApiException ex)
-                {
-                    if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
-                    {
-                        return View("Error");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    
-                    return View();
-                }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("login", "auth");
             }
+            try
+            {
+                await _crudService.DeleteAsync($"/lessons/delete/{id}", id);
+            }
+            catch (ApiException ex)
+            {
+                if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    return View("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return View();
+            }
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

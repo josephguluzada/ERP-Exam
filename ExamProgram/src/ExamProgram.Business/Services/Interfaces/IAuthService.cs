@@ -6,4 +6,5 @@ namespace ExamProgram.Business.Services.Interfaces;
 public interface IAuthService
 {
     Task<TokenResponseDto> Login(UserLoginDto userLoginDto);
+    Task Logout();
 }

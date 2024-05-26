@@ -18,6 +18,10 @@ namespace ExamProgram.UI.Controllers
         }
         public async Task<IActionResult> Index()
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             var datas = await _crudService.GetAllAsync<IEnumerable<StudentViewModel>>("/students/getall");
 
             return View(datas);
@@ -25,6 +29,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Create()
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             ViewBag.Classes = await _crudService.GetAllAsync<List<CLassViewModel>>("/class/getall");
 
             return View();
@@ -34,6 +42,10 @@ namespace ExamProgram.UI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(StudentCreateViewModel model)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             ViewBag.Classes = await _crudService.GetAllAsync<List<CLassViewModel>>("/class/getall");
             if(!ModelState.IsValid) return View(model);
 
@@ -63,6 +75,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Update(int id)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             ViewBag.Classes = await _crudService.GetAllAsync<List<CLassViewModel>>("/class/getall");
             var data = await _crudService.GetByIdAsync<StudentCreateViewModel>($"/students/get/{id}", id);
             if(data is null)
@@ -75,6 +91,10 @@ namespace ExamProgram.UI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(int id, StudentCreateViewModel model)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             ViewBag.Classes = await _crudService.GetAllAsync<List<CLassViewModel>>("/class/getall");
             try
             {
@@ -102,6 +122,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             try
             {
                 await _crudService.DeleteAsync($"/students/delete/{id}", id);

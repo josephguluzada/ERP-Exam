@@ -19,6 +19,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Index()
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             IEnumerable<ExamViewModel> datas = null;
 
             try
@@ -35,7 +39,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Create()
         {
-            
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             try
             {
                 ViewBag.Lessons = await _crudService.GetAllAsync<List<LessonViewModel>>("/lessons/getall");
@@ -52,6 +59,10 @@ namespace ExamProgram.UI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ExamCreateViewModel model)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             ViewBag.Lessons = await _crudService.GetAllAsync<List<LessonViewModel>>("/lessons/getall");
             try
             {
@@ -83,6 +94,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Update(int id)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             ExamCreateViewModel data = null;
             try
             {
@@ -116,6 +131,10 @@ namespace ExamProgram.UI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(int id, ExamCreateViewModel model)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
 
             try
             {
@@ -153,6 +172,10 @@ namespace ExamProgram.UI.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
+            if (HttpContext.Request.Cookies["token"] is null)
+            {
+                return RedirectToAction("login", "auth");
+            }
             try
             {
                 await _crudService.DeleteAsync($"/exams/delete/{id}", id);

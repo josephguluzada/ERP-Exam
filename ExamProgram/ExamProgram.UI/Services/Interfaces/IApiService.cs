@@ -5,5 +5,6 @@ namespace ExamProgram.UI.Services.Interfaces
     public interface IApiService
     {
         Task<AuthViewModel> Login(LoginViewModel model);
+        Task Logout();
     }
 }
