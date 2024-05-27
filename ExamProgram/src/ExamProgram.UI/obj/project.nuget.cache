@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4j6PwcNWdaJU5WAde5J7TujKSpWZ+DfoXmrgCtwUwIULOvhj58cD/MB92HRvbInDqS5PTXKzjVlGf34qaWGwOg==",
+  "dgSpecHash": "SqBl09WlS9Wn4c26alrb6p9x1kYHIf+cjUsCEBkZhTOSTxlJlz6FsvZgkESpNenN0DqUvfDBaOGAEytLeU4RrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\ExamProgram.UI\\ExamProgram.UI.csproj",
+  "projectFilePath": "C:\\Users\\asus\\Desktop\\Exam-Program-Application\\ExamProgram\\src\\ExamProgram.UI\\ExamProgram.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -17,103 +17,103 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ExamProgram.UI
 build_property.RootNamespace = ExamProgram.UI
-build_property.ProjectDir = C:\Users\asus\Desktop\Exam-Program-Application\ExamProgram\ExamProgram.UI\
+build_property.ProjectDir = C:\Users\asus\Desktop\Exam-Program-Application\ExamProgram\src\ExamProgram.UI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\asus\Desktop\Exam-Program-Application\ExamProgram\ExamProgram.UI
+build_property.MSBuildProjectDirectory = C:\Users\asus\Desktop\Exam-Program-Application\ExamProgram\src\ExamProgram.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Auth/Login.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Class/Create.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Class/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Class/Index.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Class/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Class/Update.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Class/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Exam/Create.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Exam/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Exam/Index.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Exam/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Exam/Update.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Exam/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Home/Index.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Home/Privacy.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Lesson/Create.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Lesson/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Lesson/Index.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Lesson/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Lesson/Update.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Lesson/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Shared/Error.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Student/Create.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Student/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Student/Index.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Student/Update.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Student/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Teacher/Create.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Teacher/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Teacher/Index.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Teacher/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Teacher/Update.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Teacher/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/_ViewImports.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/_ViewStart.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/ExamProgram.UI/Views/Shared/_Layout.cshtml]
+[C:/Users/asus/Desktop/Exam-Program-Application/ExamProgram/src/ExamProgram.UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hyelbcxd6w

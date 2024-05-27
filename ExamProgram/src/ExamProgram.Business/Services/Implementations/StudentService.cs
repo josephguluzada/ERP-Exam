@@ -67,7 +67,7 @@ public class StudentService : IStudentService
 
     public async Task UpdateAsync(int id, StudentUpdateDto dto)
     {
-        if (await _studentRepository.Table.AnyAsync(x => x.Number == dto.Number))
+        if (await _studentRepository.Table.AnyAsync(x => x.Number == dto.Number && x.Id != id))
             throw new SameNumberException("Number", "Nömrə hal-hazırda mövcuddur");
         if (!await _classRepository.Table.AnyAsync(x => x.Id == dto.ClassId))
             throw new NotFoundException("ClassId", "Belə bir sinif mövcud deyil");

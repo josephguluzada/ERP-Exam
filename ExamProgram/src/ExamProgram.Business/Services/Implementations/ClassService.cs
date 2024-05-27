@@ -63,7 +63,7 @@ public class ClassService : IClassService
 
     public async Task UpdateAsync(int id, ClassUpdateDto dto)
     {
-        if (_classRepository.Table.Any(x => x.Number == dto.Number))
+        if (_classRepository.Table.Any(x => x.Number == dto.Number && x.Id != id))
             throw new SameClassNoException("Number", "Cannot be same!");
         var data = await _classRepository.GetSingleAsync(x => x.Id == id);
 

@@ -74,7 +74,7 @@ public class LessonService : ILessonService
             throw new NotFoundException("ClassId", "Belə bir sinif mövcud deyil");
         if (!await _teacherRepository.Table.AnyAsync(x => x.Id == dto.TeacherId))
             throw new NotFoundException("TeacherId", "Belə bir müəllim mövcud deyil");
-        if (await _lessonRepository.Table.AnyAsync(x => x.Code.ToLower() == dto.Code.Trim().ToLower()))
+        if (await _lessonRepository.Table.AnyAsync(x => x.Code.ToLower() == dto.Code.Trim().ToLower() && x.Id != id))
             throw new LessonCodeAlreadyExistException("Code", "Bu kodlu sinif haz-hazırda mövcuddur");
         var data = await _lessonRepository.GetSingleAsync(x => x.Id == id, "Class", "Teacher");
         if (data is null) throw new LessonNotFoundException("","Dərs tapılmadı");
