@@ -34,8 +34,12 @@ The project follows an n-layered architecture:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/exam-repository-erp.git
+   git clone https://github.com/josephguluzada/Exam-ERP-System.git
 
 2. For testing app:
-   Admin Username: SuperAdmin
-   Admin password: Admin123@   
+   Admin Username:
+   ```sh
+   SuperAdmin
+3. Admin password:
+   ```sh
+   Admin123@   
